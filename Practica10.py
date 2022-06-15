@@ -9,7 +9,7 @@ mask = np.zeros(image.shape[:2], np.uint8)
    
 backgroundModel = np.zeros((1, 65), np.float64) 
 foregroundModel = np.zeros((1, 65), np.float64) 
-   
+
 rectangle = (10, 50, 500, 250) 
    
 cv2.grabCut(image, mask, rectangle,backgroundModel, foregroundModel,3,cv2.GC_INIT_WITH_RECT) 
